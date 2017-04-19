@@ -36,6 +36,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.say('Aloha!', 'Aloha!', {
         inputHint: builder.InputHint.ignoringInput
     });
+    session.say('I have to go!', 'Mahalo!')
     session.send('Sorry, I did not understand \'%s\'.', session.message.text);
 });
 
